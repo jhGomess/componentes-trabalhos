@@ -7,6 +7,14 @@
 
 :root {
   font-size: 62.5%;
+
+  --ff-heading: "Epilogue", sans-serif;
+  --ff-texting: "Open Sans", sans-serif;
+
+  --hue: 237;
+  --bg-primary: hsl(var(--hue), 22%, 20%);
+  --fc-primary: hsl(var(--hue), 0%, 100%);
+  --fc-secondary: hsl(var(--hue), 50%, 80%);
 }
 
 ul {
@@ -15,4 +23,16 @@ ul {
 
 body {
   font-size: 1.6rem;
+
+  font-family: var(--ff-texting);
+  background-color: var(--bg-primary);
+  color: var(--fc-primary);
+}
+
+header {
+  font-family: var(--ff-heading);
+}
+
+header p {
+  color: var(--fc-secondary);
 }
